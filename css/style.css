@@ -42,21 +42,29 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-}
+
 a {
   color: #07A2EF;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #07A2EF;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
@@ -65,37 +73,43 @@ a:focus {
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   /* color: #ff7f50; */
   /* We suggest using a different color here */
   color: gray;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
 /* general buttons */
 .button {
-  display: inline-block;
   background-color: #ff7f50;
+  border-bottom: 2px solid #994c30;
+  border-radius: 3px;
   color: #ffffff;
+  display: inline-block;
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
