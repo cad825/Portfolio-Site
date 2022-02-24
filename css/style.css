@@ -3,7 +3,6 @@ Colors used:
 Primary Color (Light Blue): #07A2EF;
 Secondary Color (Blue): #0F45BC;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -11,14 +10,57 @@ Secondary Color (Blue): #0F45BC;
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.68);
+  position: relative
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 body {
-
   background-color: #ffffff;
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 300;
@@ -58,20 +100,25 @@ h4 {
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: gray;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
-
 
 /* general buttons */
 .button {
@@ -96,16 +143,19 @@ a:active { /* selected link */
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+  margin: 10px;
 }
 
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+  margin: 10px;
 }
 
 .button.resume {
   background-color: transparent;
   color: #07A2EF;
+  padding: 10px;
   text-transform: uppercase;
   border: 2px solid #07A2EF;
 }
@@ -113,4 +163,16 @@ a:active { /* selected link */
 .button.resume:hover {
   background-color: #07A2EF;
   color: #ffffff;
+  padding: 10px;
 }
+
+#contact {
+  background-color: #ffffff;
+  padding: 20px 0;
+    text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.socialicon {
+  max-width: 60px;
