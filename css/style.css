@@ -55,8 +55,9 @@ nav>ul>li>a {
   background-color: #ffffff;
   padding: 20px 0;
   text-align: center;
-  display: inline-block;
+  display: block;
   width: 100%;
+  max-width: 1200px;
 }
 
 body {
@@ -215,14 +216,18 @@ a:active {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -279,9 +284,7 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 }
 
