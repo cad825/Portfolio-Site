@@ -1,7 +1,5 @@
 /*
 Colors used:
-Primary Color (Light Blue): #07A2EF;
-Secondary Color (Blue): #0F45BC;
 */
 * {
   box-sizing: border-box;
@@ -26,9 +24,8 @@ Secondary Color (Blue): #0F45BC;
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 10px 0 4px;
-  box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.68);
   position: relative
 }
 
@@ -41,8 +38,13 @@ nav>ul {
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
+  font-weight: 550;
+  color: #ffffff;
+}
+
+nav>ul>li>a:hover {
+color: #07A2EF;
+text-decoration: underline;
 }
 
 .navtoggle li:not(:last-child) {
@@ -61,20 +63,21 @@ nav>ul>li>a {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(74,74,74,1);
+  border-top: 1px solid rgba(74, 74, 74, 1);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -96,7 +99,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #000000;
 }
 
 img {
@@ -128,20 +131,15 @@ h4 {
 }
 
 a {
-  color: #ff7f50;
+  color: #07A2EF;
   text-decoration: none;
   /* No underlining */
 }
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #0f38a8;
   text-decoration: underline;
-}
-
-a:visited {
-  /* visited link */
-  color: gray;
 }
 
 a:active {
@@ -152,13 +150,12 @@ a:active {
 /* general buttons */
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #07A2EF;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
 
@@ -166,6 +163,7 @@ a:active {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: white;
 }
 
 .button.contact {
@@ -183,8 +181,8 @@ a:active {
 }
 
 .button.resume {
-  background-color: transparent;
-  color: #07A2EF;
+  background-color: #07A2EF;
+  color: white;
   padding: 10px;
   text-transform: uppercase;
   border: 2px solid #07A2EF;
@@ -277,12 +275,12 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .logo {
     max-width: 250px;
